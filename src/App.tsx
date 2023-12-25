@@ -1,16 +1,13 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
+import Canvas from "./components/Canvas";
 
 function App() {
-  const canvasRef = useRef();
-  useEffect(() => {
-    console.log(canvasRef);
-  }, []);
-
-  return;
-  <div>
-    <canvas ref={canvasRef} />;
-  </div>;
+  return (
+    <>
+      <Canvas />
+    </>
+  );
 }
 
 export default App;
