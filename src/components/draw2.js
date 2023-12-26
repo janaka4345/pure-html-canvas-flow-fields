@@ -1,14 +1,3 @@
-let line = [
-  {
-    startX: Math.random() * 700,
-    startY: Math.random() * 700,
-    endX: Math.random() * 700,
-    endY: Math.random() * 700,
-    color: `hsl(${Math.random() * 360 + 1},${Math.random() * 100 + 1}%,${
-      Math.random() * 50 + 1
-    }%`,
-  },
-];
 let count = 0;
 
 export function draw2(ctx) {
