@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { draw2 } from "./draw2";
 import { draw3 } from "./draw3";
+import { draw4 } from "./draw4";
 
 export default function Canvas() {
   const canvasRef = useRef(null);
@@ -11,7 +12,8 @@ export default function Canvas() {
     // console.log(ctx);
     function animation() {
       // draw2(ctx);
-      draw3(ctx);
+      // draw3(ctx);
+      draw4(ctx);
       animationFrameId.current = requestAnimationFrame(animation);
     }
     animation();
